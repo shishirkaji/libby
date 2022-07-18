@@ -13,14 +13,14 @@ class BookNode(DjangoObjectType):
     class Meta:
         model = Book
         filter_field = []
-        interface = (relay.Node, )
+        interfaces = (relay.Node, )
 
 
 class AuthorNode(DjangoObjectType):
     class Meta:
         model = Author
         filter_field = []
-        interface = (relay.Node, )
+        interfaces = (relay.Node, )
 
 
 # Problem : If we update a book, that belongs to an Author,

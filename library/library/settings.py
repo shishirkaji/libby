@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'graphene_django',
 ]
 
-Grapene = {
+GRAPHENE = {
     'SCHEMA': 'library.schema.schema',
 }
 

@@ -6,8 +6,8 @@ class Query(catalog.schema.Query, ObjectType):
     pass
 
 
-class Mutation(ObjectType):
+class Mutation(catalog.schema.Mutation, ObjectType):
     pass
 
 
-schema  = Schema(query= Query)
+schema = Schema(query=Query, mutation= Mutation)
